@@ -371,24 +371,24 @@ export default function RegisterPage() {
                                         fullWidth
                                         name="password"
                                         label="Password"
-                                        type={showPassword ? "text" : "password"}
+                                            type={showPassword ? "text" : "password"}
                                         value={form.password}
                                         onChange={handleChange}
                                         error={!!errors.password}
                                         helperText={errors.password}
                                         disabled={isLoading}
                                         InputProps={{
-                                            startAdornment: (
-                                                <InputAdornment position="start">
-                                                    <Lock
-                                                        sx={{
-                                                            color: errors.password
-                                                                ? theme.palette.error.main
-                                                                : theme.palette.primary.main
-                                                        }}
-                                                    />
-                                                </InputAdornment>
-                                            ),
+                                            // startAdornment: (
+                                            //     <InputAdornment position="start">
+                                            //         <Lock
+                                            //             sx={{
+                                            //                 color: errors.password
+                                            //                     ? theme.palette.error.main
+                                            //                     : theme.palette.primary.main
+                                            //             }}
+                                            //         />
+                                            //     </InputAdornment>
+                                            // ),
                                             endAdornment: (
                                                 <InputAdornment position="end">
                                                     <IconButton

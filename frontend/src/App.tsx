@@ -1,6 +1,6 @@
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "./pages/Auth/LoginPage";
 import ProtectedRouteLayout from "./layout/ProtectedRouteLayout";
 import DashboardLayout from "./layout/DashBoardLayout";
@@ -24,6 +24,7 @@ function App() {
       <ToastContainer position="top-right" autoClose={2000} />
 
       <Routes>
+        <Route path="/" element={<Navigate to="/register" replace />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
 

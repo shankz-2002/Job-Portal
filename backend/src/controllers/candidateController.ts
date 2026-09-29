@@ -82,6 +82,12 @@ export const editProfile = async (req: AuthRequest, res: Response, next: NextFun
             candidateProfile.resume = result.secure_url;
 
         }
+        
+        //save files using multer
+        // if (req.file) {
+        //     candidateProfile.resume = req.file.path; // save local path in DB
+        //     await candidateProfile.save();
+        // }
 
         const candidate = await getCandidateProfileById(userId);
         const user = await getUserById(userId);

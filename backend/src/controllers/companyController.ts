@@ -13,9 +13,9 @@ export const createProfile = async (req: AuthRequest, res: Response, next: NextF
             throw new ApiError("Profile already exist", 400);
         }
         const user = await getUserById(userId);
-        if (!user) {
-            throw new ApiError("User not found", 404)
-        }
+            if (!user) {
+                throw new ApiError("User not found", 404)
+            }
         const profile = await companyProfileService(req.body, user);
         res.status(200).json({
             success: true,

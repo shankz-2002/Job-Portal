@@ -57,7 +57,7 @@ export default function JobApplication() {
     const [loading, setLoading] = useState(true);
     const [tab, setTab] = useState("all");
 
-    const fetchApplications = async () => {
+    const   fetchApplications = async () => {
         setLoading(true);
         try {
             const res = await getApplicationsByJobId(Number(jobId));
