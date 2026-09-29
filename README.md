@@ -38,7 +38,7 @@ npm run dev
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 Make sure the required database and environment variables are configured.
