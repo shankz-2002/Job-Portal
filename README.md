@@ -41,8 +41,14 @@ npm install
 npm run dev
 ```
 
-Make sure the required database and environment variables are configured.
+## Environment Variables
 
+Example environment files are provided for both the backend and frontend:
+
+- Backend: `backend/.env.example`
+- Frontend: `frontend/.env.example`
+
+Copy the appropriate `.env.example` file to `.env` and add your own configuration values.
 ## Author
 
 Ravi Shankar
